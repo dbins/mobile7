@@ -7,7 +7,7 @@
     <author email="bins.br@gmail.com" href="http://www.leandrotonon.com.br/projetos/bins">
         Bins
     </author>
-    <preference name="orientation" value="portrait" /> 
+    <preference name="orientation" value="default" /> 
 	<preference name="fullscreen" value="false" />
 	<preference name='phonegap-version' value='cli-5.2.0' />
 	<gap:plugin name="cordova-plugin-battery-status" />
