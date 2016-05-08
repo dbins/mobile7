@@ -2,8 +2,6 @@
 <html>
 <head>
 <meta charset=utf-8 />
-
-<!-- Website Design By: www.happyworm.com -->
 <title>Demo : jPlayer as video playlist and audio playlist players</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link href="skin/pink.flag/jplayer.pink.flag.css" rel="stylesheet" type="text/css" />
@@ -93,15 +91,24 @@ $(document).ready(function(){
 	});
 });
 //]]>
-
-
-
 </script>
+<style type="text/css">
+	body {background-color:#000000}
+	a {color: #FFFFFF; text-decoration: none;}
+</style>
 </head>
 <body bgcolor="#000000">
-		<div style="background-color:#FFFFFF;text-align:center;height:50px;">
-			<a href="index.html">Clique aqui para voltar</a>
-		</div>
+<div data-role="page" id="radio">
+
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false">
+		<div style="background-color:#000000;text-align:center">
+			<a href="index.html" data-role="button">Clique aqui para voltar</a>
+			<p>&nbsp;</p>
+		</div>	
+	</div>
+		
+	<div data-role="main" id="main_radio">
+		
 		
 		<div id="jquery_jplayer_2" class="jp-jplayer"></div>
 
@@ -147,6 +154,12 @@ $(document).ready(function(){
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
+$(document).ready(onDeviceReady());
+</script>
 </body>
 
 </html>

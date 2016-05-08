@@ -1,33 +1,58 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.binsmobile7" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android= "http://schemas.android.com/apk/res/android">
-    <name>Radio Online do Bins</name>
+    <name>Radio Online</name>
     <description>
-	Aplicacao de testes Phonegap
+	Radio Online
 	</description>
-    <author email="bins.br@gmail.com" href="http://www.leandrotonon.com.br/projetos/bins">
+    <author email="bins.br@gmail.com" href="http://www.dbins.com.br">
         Bins
     </author>
-    <preference name="orientation" value="default" /> 
-	<preference name="fullscreen" value="false" />
+    <content src="index.html" />
+	<preference name="loadUrlTimeoutValue" value="10000" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-installLocation" value="auto" />
 	<preference name='phonegap-version' value='cli-5.2.0' />
-	<gap:plugin name="cordova-plugin-battery-status" />
-    <gap:plugin name="cordova-plugin-camera" />
-    <gap:plugin name="cordova-plugin-media-capture" />
     <gap:plugin name="cordova-plugin-console" />
-    <gap:plugin name="cordova-plugin-contacts" />
     <gap:plugin name="cordova-plugin-device" />
     <gap:plugin name="cordova-plugin-device-motion" />
     <gap:plugin name="cordova-plugin-device-orientation" />
     <gap:plugin name="cordova-plugin-dialogs" />
     <gap:plugin name="cordova-plugin-file" />
-    <gap:plugin name="cordova-plugin-file-transfer" />
     <gap:plugin name="cordova-plugin-geolocation" />
     <gap:plugin name="cordova-plugin-globalization" />
-    <gap:plugin name="cordova-plugin-inappbrowser" />
     <gap:plugin name="cordova-plugin-media" />
     <gap:plugin name="cordova-plugin-network-information" />
     <gap:plugin name="cordova-plugin-splashscreen" />
-    <gap:plugin name="cordova-plugin-vibration" />
     <icon src="icon.png" />
-	<access origin="*" />
+	<gap:splash src="splash.png" />
+    <access origin="*" />
+       <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+	<platform name="winphone">
+    </platform>
 </widget>
