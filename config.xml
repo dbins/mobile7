@@ -9,6 +9,7 @@
     </author>
     <content src="index.html" />
 	<preference name="loadUrlTimeoutValue" value="10000" />
+	<preference name='phonegap-version' value='cli-6.5.0' />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
@@ -25,18 +26,19 @@
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
 	<preference name='phonegap-version' value='cli-5.2.0' />
-    <gap:plugin name="cordova-plugin-console" />
-    <gap:plugin name="cordova-plugin-device" />
-    <gap:plugin name="cordova-plugin-device-motion" />
-    <gap:plugin name="cordova-plugin-device-orientation" />
-    <gap:plugin name="cordova-plugin-dialogs" />
-    <gap:plugin name="cordova-plugin-file" />
-    <gap:plugin name="cordova-plugin-geolocation" />
-    <gap:plugin name="cordova-plugin-globalization" />
-    <gap:plugin name="cordova-plugin-media" />
-    <gap:plugin name="cordova-plugin-network-information" />
-    <gap:plugin name="cordova-plugin-splashscreen" />
-    <icon src="icon.png" />
+    <plugin name="cordova-plugin-console" source="npm" spec="~1.0.7" />
+	<plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
+    <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2" />
+    <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0" />
+	<plugin name="cordova-plugin-file" source="npm" spec="~4.1.1" />
+	<plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.6.3" />
+    <plugin name="cordova-plugin-geolocation" source="npm" spec="~2.1.0" />
+    <plugin name="cordova-plugin-globalization" source="npm" spec="~1.0.3" />
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+	<plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+	<icon src="icon.png" />
 	<gap:splash src="splash.png" />
     <access origin="*" />
        <access origin="*" />
